@@ -2,8 +2,8 @@
 using namespace std;
 
 int partitionLomuto(vector<int>& a, int low, int high) {
-    int pivot = a[high];          // last element pivot
-    int i = low - 1;              // boundary of smaller elements
+    int pivot = a[high];
+    int i = low - 1;
 
     for (int j = low; j < high; j++) {
         if (a[j] <= pivot) {
@@ -12,7 +12,7 @@ int partitionLomuto(vector<int>& a, int low, int high) {
         }
     }
     swap(a[i + 1], a[high]);
-    return i + 1;                 // pivot final position
+    return i + 1;
 }
 
 void quickSort(vector<int>& a, int low, int high) {
@@ -24,9 +24,6 @@ void quickSort(vector<int>& a, int low, int high) {
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     int n;
     cin >> n;
     vector<int> a(n);
@@ -38,6 +35,6 @@ int main() {
         cout << a[i] << " ";
     }
     cout << endl;
-    
+
     return 0;
 }
