@@ -1,0 +1,1 @@
+{"name":"Local: quick_sort","url":"/home/mdnaim2004/mydesk/Algorithm_and_Design_Analysis/quick_sort.cpp","tests":[{"id":1772370161158,"input":"10\n2 1 3 6 9 5 7 0 8 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mdnaim2004/mydesk/Algorithm_and_Design_Analysis/quick_sort.cpp","group":"local","local":true}
