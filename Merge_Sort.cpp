@@ -19,26 +19,26 @@ void mergeArrays(vector<int>& a, int l, int mid, int r) {
     while (i < n1 && j < n2) {
         if (L[i] <= R[j]) {
             a[k] = L[i];
-            i = i + 1;
-            k = k + 1;
+            i++;
+            k++;
         }
         else {
             a[k] = R[j];
-            j = j + 1;
-            k = k + 1;
+            j++;
+            k++;
         }
     }
 
     while (i < n1) {
         a[k] = L[i];
-        i = i + 1;
-        k = k + 1;
+        i++;
+        k++;
     }
 
     while (j < n2) {
         a[k] = R[j];
-        j = j + 1;
-        k = k + 1;
+        j++;
+        k++;
     }
 }
 

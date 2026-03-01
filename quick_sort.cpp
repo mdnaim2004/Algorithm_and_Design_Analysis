@@ -1,40 +1,43 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int partitionLomuto(vector<int>& a, int low, int high) {
-    int pivot = a[high];
-    int i = low - 1;
+void quick_sort(vector<int>& arr, int l, int h){
+    int i = l;
+    int j = h;
+    int pivot = arr[l];
 
-    for (int j = low; j < high; j++) {
-        if (a[j] <= pivot) {
-            i++;
-            swap(a[i], a[j]);
+    if(l<h){
+        while(i<j){
+            while(arr[i] <= pivot && i<h)
+                i++;
+
+            while(arr[j] > pivot)
+                j--;
+            
+            if(i<j)
+                swap(arr[l], arr[j]);
         }
-    }
-    swap(a[i + 1], a[high]);
-    return i + 1;
-}
+        arr[l] = arr[i];
+        arr[j] = pivot;
 
-void quickSort(vector<int>& a, int low, int high) {
-    if (low < high) {
-        int p = partitionLomuto(a, low, high);
-        quickSort(a, low, p - 1);
-        quickSort(a, p + 1, high);
+        quick_sort(arr, l, j-1);
+        quick_sort(arr, j+1, h);
     }
 }
 
-int main() {
+int main(){
     int n;
     cin >> n;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++) cin >> a[i];
 
-    quickSort(a, 0, n - 1);
+    vector<int> arr(n);
 
-    for (int i = 0; i < n; i++) {
-        cout << a[i] << " ";
-    }
-    cout << endl;
+    for(int i=0; i<n; i++)
+        cin >> arr[i];
+
+    quick_sort(arr, 0, n-1);
+
+    for(int i=0; i<n; i++)
+        cout << arr[i] << " ";
 
     return 0;
 }
