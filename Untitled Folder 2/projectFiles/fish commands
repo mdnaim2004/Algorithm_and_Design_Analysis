@@ -1,0 +1,13 @@
+chsh -s /usr/bin/fish
+
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+omf install emoji-powerline
+
+function fish_greeting
+
+     terminal-rain
+
+     end
+
+funcsave fish_greeting
