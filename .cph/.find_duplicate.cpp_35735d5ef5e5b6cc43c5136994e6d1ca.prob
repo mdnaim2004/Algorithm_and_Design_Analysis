@@ -1,0 +1,1 @@
+{"name":"Local: find_duplicate","url":"/home/mdnaim2004/mydesk/Algorithm_and_Design_Analysis/find_duplicate.cpp","tests":[{"id":1777269682639,"input":"5\n1 2 3 4 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mdnaim2004/mydesk/Algorithm_and_Design_Analysis/find_duplicate.cpp","group":"local","local":true}
