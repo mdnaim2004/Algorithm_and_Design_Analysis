@@ -19,13 +19,10 @@ int main(){
     int last = -1;
 
     vector<int> ans;
-
-
     // for(auto x: v){
     //     int finish = x.first;
     //     int start = x.second.first;
     //     int idx = x.second.second;
-
     //     if(start >= last){
     //         ans.push_back(idx);
     //         last = finish;
