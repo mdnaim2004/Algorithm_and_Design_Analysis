@@ -28,14 +28,12 @@ int main(){
     //         last = finish;
     //     }
     // }
-
     for(auto x : v){
         if(x.second.first >= last){
             ans.push_back(x.second.second);
             last = x.first;
         }
     }
-
 
     cout << ans.size() << endl;
     for(auto x : ans){
