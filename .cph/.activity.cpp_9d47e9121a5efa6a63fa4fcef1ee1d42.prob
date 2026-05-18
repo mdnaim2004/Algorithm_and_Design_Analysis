@@ -1,0 +1,1 @@
+{"name":"Local: activity","url":"/home/mdnaim/Github/Algorithm_and_Design_Analysis/activity.cpp","tests":[{"id":1779039049876,"input":"5\n1 4\n3 5\n0 6\n5 7\n8 9","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mdnaim/Github/Algorithm_and_Design_Analysis/activity.cpp","group":"local","local":true}
