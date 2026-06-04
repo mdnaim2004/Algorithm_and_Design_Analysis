@@ -18,6 +18,7 @@ void quick_sort(vector<int>& arr, int l, int h){
                 swap(arr[i], arr[j]);
             }
         }
+        
         swap(arr[l], arr[j]);
         quick_sort(arr, l, j-1);
         quick_sort(arr, j+1, h);
