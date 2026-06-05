@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-    int n;
-    cin >> n;
+    int n; cin >> n;
 
     vector<pair<int, int>> v;
     
@@ -27,6 +26,8 @@ int main(){
             lastfinish = finish;
         }
     }
+
     cout << cnt << "\n";
+
     return 0;
 }
